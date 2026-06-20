@@ -180,10 +180,10 @@ export default async function ResultPage({
         )}
 
         <Link
-          href="/user/survey"
+          href="/user"
           className="block text-center w-full py-3 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors"
         >
-          Isi survey lain
+          Dashboard User
         </Link>
       </div>
     </main>
