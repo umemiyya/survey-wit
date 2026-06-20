@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Survey {
+  id                     String   @id @default(uuid())
+  responden              String
+  bulan                  String
+  kualitasPengharum      Int
+  pelayananService       Int
+  pelayananComplain      Int
+  akanMenggunakan        String
+  pelayananDiperpanjang  String
+  kualitasAroma          Int
+  kebersihanAlat         Int
+  ketepatanWaktu         Int
+  kecepatanRespon        Int
+  saran                  String?
+  prediksi               String?
+  probabilitas           Int?
+
+  // Label manual untuk training Random Forest nantinya.
+  // Diisi oleh admin lewat halaman labeling, terpisah dari `prediksi`
+  // (yang merupakan hasil rule-based classifier, bukan ground truth).
+  // Nilai: "Tidak Puas" | "Puas" | "Sangat Puas" | null (belum dilabel)
+  labelManual            String?
+
+  createdAt              DateTime @default(now())
+
+  @@map("surveys")
+}
