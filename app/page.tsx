@@ -25,21 +25,12 @@ export default function LandingPage() {
               terpercaya.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/user/survey">
+              <Link href="/user">
                 <Button
                   size="lg"
                   className="w-full sm:w-auto rounded-full bg-blue-600 hover:bg-blue-700"
                 >
                   Isi survey
-                </Button>
-              </Link>
-              <Link href="/login">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto rounded-full border-slate-200 text-slate-700 hover:bg-slate-50"
-                >
-                  Masuk
                 </Button>
               </Link>
             </div>
