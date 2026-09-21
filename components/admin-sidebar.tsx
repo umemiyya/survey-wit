@@ -9,7 +9,7 @@ const navItems = [
   { href: '/admin/surveys',     label: 'Data survey',   icon: ClipboardList   },
   { href: '/admin/labeling',    label: 'Labeling data', icon: Tag             },
   { href: '/admin/classification', label: 'Klasifikasi',   icon: GitBranch       },
-  // { href: '/admin/settings',    label: 'Pengaturan',    icon: Settings        },
+  { href: '/admin/dataset',    label: 'Dataset',    icon: Settings        },
 ]
 
 export function AdminSidebar() {
